@@ -18,18 +18,18 @@ public class Point3D {
 		
 		float a, b, c;
 		
-		a = Point1.x + Point2.x;
-		b = Point1.y + Point2.y;
-		c = Point1.z + Point2.z;
+		a = (Point1.x + Point2.x) / 2;
+		b = (Point1.y + Point2.y) / 2;
+		c = (Point1.z + Point2.z) / 2;
 		
-		return "(" + a + ", " + b  + ", " + c + ")";
+		return "(" + a + ", " + b  + ", " + c + ", 1)";
 		
 		
 	}
 	
 	public String PointYaz(Point3D Point1){
 		
-		return "(" + Point1.x + ", " + Point1.y  + ", " + Point1.z + ")";
+		return "(" + Point1.x + ", " + Point1.y  + ", " + Point1.z + ", 1)";
 	}
 	
 public String Fark(Point3D Point1, Point3D Point2){
